@@ -3,6 +3,7 @@
   var myConnector = mstr.createDataConnector();
   // Connector must define fetchTable function
   myConnector.fetchTable = function(table, params, doneCallback) {
+debugger;
     // params represents information sent by connector to MSTR at interactive phase
     var mstrObj = JSON.parse(params);
     var file = mstrObj.connectionData.file;
