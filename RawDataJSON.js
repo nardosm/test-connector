@@ -7,7 +7,8 @@
     // params represents information sent by connector to MSTR at interactive phase
     var mstrObj = JSON.parse(params);
     var file = mstrObj.connectionData.file;
-    var url = "https://eventmanager-4c485.firebaseio.com/-Kkpnt0DxRpQeHvUp3Lv.json";       
+    var url = "https://eventmanager-4c485.firebaseio.com/-Kkpnt0DxRpQeHvUp3Lv.json";  
+	debugger;
     // Retrieve file type from params
     fileType = mstrObj.fileType;
     $.get(url, function(resp) {
