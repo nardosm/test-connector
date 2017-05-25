@@ -23,13 +23,13 @@
 $(document).ready(function() {
   $("#submitButton").click(function() {
     var content = $("#file").val();
-    mstr.connectionName = "RawDataFiles20";
+    mstr.connectionName = "RawDataFiles22";
     // connectionData is a JSON object. Connector can put any information here.
     mstr.connectionData = {};
     mstr.connectionData.file = content;
     // MUST define tableList field. Can import multiple tables in one connection.
     mstr.tableList = [];
-    mstr.tableList.push({tableName: "RawDataCsv21"});
+    mstr.tableList.push({tableName: "RawDataCsv22"});
     // Inform that interactive phase is finished and send information to MSTR
 	debugger;
     window.mstr.submit();
